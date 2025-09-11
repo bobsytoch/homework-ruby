@@ -1,5 +1,5 @@
 def word_stats(text)
-    words = text.split(/\s+/gm)
+    words = text.split(/\s+/)
 
     count = words.size
     longest = words.max_by(&:length)
@@ -9,6 +9,4 @@ def word_stats(text)
 end
 
 print "Введіть рядок тексту: "
-user_input = gets.chomp
-
-word_stats(user_input)
+word_stats(gets.chomp)
