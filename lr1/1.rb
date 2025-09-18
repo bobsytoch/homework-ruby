@@ -8,5 +8,5 @@ def word_stats(text)
     puts "#{count} слів, найдовше: #{longest}, унікальних: #{unique}"
 end
 
-print "Введіть рядок тексту: "
+print "введіть рядок: "
 word_stats(gets.chomp)
